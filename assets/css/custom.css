@@ -282,17 +282,6 @@ small {
     background: #212529;
 }
 
-
-/* .wrapper-header:after {
-    position: absolute;
-    content: "";
-    background: #2200ff;
-    width: 70%;
-    height: 100%;
-    top: 0;
-    left: 0;
-} */
-
 .wrapper-header:before {
     position: absolute;
     content: "";
@@ -304,6 +293,17 @@ small {
     mix-blend-mode: overlay;
     background-attachment: fixed;
 }
+
+
+/* .wrapper-header:after {
+    position: absolute;
+    content: "";
+    background: #2200ff;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} */
 
 .wrapper-header .social-media {
     position: fixed;
@@ -694,7 +694,7 @@ header {
 
 .about {
     background: #f6f6f6;
-    background: url(../../assets/image/about.jpg) no-repeat center / cover;
+    background: url(../../assets/image/about.jpg) no-repeat bottom / cover;
     background-attachment: fixed;
     position: relative;
 }
@@ -1104,6 +1104,58 @@ textarea::-webkit-input-placeholder {
 }
 
 @media (max-width: 990px) {
+    .navbar-light .navbar-toggler-icon {
+        background: #fff;
+        height: 1px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: white;
+        height: 1px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: white;
+        height: 1px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon {
+        background: #00264B;
+        height: 2px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
     small {
         letter-spacing: 1px;
     }
@@ -1132,9 +1184,74 @@ textarea::-webkit-input-placeholder {
 }
 
 @media (max-width: 768px) {
+    .navbar-light .navbar-toggler-icon {
+        background: #fff;
+        height: 2px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: white;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: white;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon {
+        background: #00264B;
+        height: 2px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .wrapper-header {
+        position: relative;
+        z-index: 9;
+        height: 100vh;
+        background: #212529;
+    }
     .wrapper-header:before {
-        width: 50%;
-        background: #f1f1f1;
+        position: absolute;
+        content: "";
+        background: url(../../assets/image/luca-zanon-X0OoHrPvgXE-unsplash.jpg) no-repeat center / cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
     }
     .text-info {
         text-align: left;
@@ -1247,18 +1364,81 @@ textarea::-webkit-input-placeholder {
     .content-hero {
         margin-top: 0;
     }
-    .wrapper-header:after {
-        width: 50%;
-    }
 }
 
 @media (max-width: 425px) {
+    .navbar-light .navbar-toggler-icon {
+        background: #fff;
+        height: 2px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: #fff;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: #fff;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon {
+        background: #00264B;
+        height: 2px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+    .fixed.navbar-light .navbar-toggler-icon:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        background: #00264B;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
     .text-info {
         text-align: center;
         margin-top: 80px;
     }
-    .wrapper-header:after {
+    .wrapper-header {
+        position: relative;
+        z-index: 9;
+        height: 100vh;
+        background: #212529;
+    }
+    .wrapper-header:before {
+        position: absolute;
+        content: "";
+        background: url(../../assets/image/luca-zanon-X0OoHrPvgXE-unsplash.jpg) no-repeat center / cover;
         width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        mix-blend-mode: overlay;
+        background-attachment: fixed;
     }
     .bg-img img {
         margin-top: 50px;
